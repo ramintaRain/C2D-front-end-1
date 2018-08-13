@@ -1,5 +1,6 @@
 .background{
-    background-color:black;
+    background: #090C30;
+    font-family: Source sans pro;
 }
 
 /*contacts*/
@@ -76,7 +77,7 @@ padding-left: 15%;
   }
 
 /*partneriai*/
-section.partners>h3{
+section.partners>h2{
     font-size: 30px;
     padding: 20px;
     text-align: center;
@@ -84,13 +85,14 @@ section.partners>h3{
 }
 
 section.partners{   
-    background-color: black;
+    background-color: #090C30;
     min-height: 250px;
     margin: 0 auto 70px auto;
     width: 95%;
 }
 div.flex-container img{
     padding: 10px;
+    
 }
 
 .apple{
@@ -103,6 +105,7 @@ div.flex-container img{
 
 .nike{
     height: 40px;
+    margin-top: 10px;
 }
 
 .cognizant{
@@ -115,6 +118,7 @@ div.flex-container img{
 
 .cola{
     height: 35px;
+    margin-top: 10px;
 }
 
 .vu{
@@ -130,13 +134,15 @@ div.flex-container img{
 
 /*footer*/
 footer{
-    background-color: rgb(12, 18, 73);
+    background-color:rgb(8, 11, 39);
     height: 350px;
     margin: 0 auto;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .flex-container2 {
-    background-color: rgb(12, 18, 73);
+    background-color: rgb(8, 11, 39);
     padding: 20px 0 0 0;
     margin: 0 auto 50px auto;
     width: 95%;
@@ -162,29 +168,31 @@ li a {
 
 h4{
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 5%;
 }
 
 /*subscribe*/
-section.patners>h3 {
+section.patners>h2 {
     color: white;
     font-size: 18px;
     margin-left: 5%;
 }
  
 input.button{
-    background-color: rgb(34, 34, 206);
-    border: 1px solid rgb(172, 148, 45);
+    background-color: rgb(11, 16, 70);
+    
+    border: 1px solid #44EEEB;
     padding: 5px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    color: rgb(139, 139, 219);
+    color: #44EEEB;
     margin-bottom: 50px;
 }
 
 input.emailhere{
-    background-color: rgb(25, 46, 138);
+    background-color: #090C30;
+    
     border: 1px solid rgb(87, 83, 145);
     padding: 5px;
     border-top-left-radius: 8px;
@@ -228,7 +236,7 @@ img.linkedin {
         display: inline;       
     }
 
-    section.partners>h3{
+    section.partners>h2{
         text-align: left;
         padding: 10px 0;
     }
@@ -257,6 +265,7 @@ img.linkedin {
         justify-content: left;
         margin: 0 auto 0 0;
         width: 0%;
+        font-size: 16px;
     }
 
     input.emailhere{
@@ -268,6 +277,7 @@ img.linkedin {
     input.button {
         height: 25px;
         margin-top: 15px;
+
     }
 
     span {margin: 0;}
