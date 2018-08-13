@@ -181,7 +181,6 @@ section.patners>h2 {
  
 input.button{
     background-color: rgb(11, 16, 70);
-    
     border: 1px solid #44EEEB;
     padding: 5px;
     border-top-right-radius: 8px;
@@ -191,9 +190,8 @@ input.button{
 }
 
 input.emailhere{
-    background-color: #090C30;
-    
     border: 1px solid rgb(87, 83, 145);
+    background-color: #090C30;
     padding: 5px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
