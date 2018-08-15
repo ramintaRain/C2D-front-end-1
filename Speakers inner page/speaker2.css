@@ -225,3 +225,229 @@ body{
 
 
 /*FOOTER*/
+
+/*partneriai*/
+section.partners>h3{
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+section.partners{
+    background-color: black;
+    min-height: 250px;
+    margin: 0 auto 70px auto;
+    width: 95%;
+}
+div.flex-container img{
+    padding: 10px;
+}
+
+.apple{
+    height: 50px;
+}
+
+.beats{
+    height: 50px;
+}
+
+.nike{
+    height: 40px;
+}
+
+.cognizant{
+    height: 50px;
+}
+
+.microsoft{
+    height: 50px;
+}
+
+.cola{
+    height: 35px;
+}
+
+.vu{
+    height: 50px;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/*footer*/
+footer{
+    background-color: rgb(12, 18, 73);
+    height: 350px;
+    margin: 0 auto;
+}
+
+.flex-container2 {
+    background-color: rgb(12, 18, 73);
+    padding: 20px 0 0 0;
+    margin: 0 auto 50px auto;
+    width: 95%;
+}
+
+.flex-container2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+h4{
+    color: white;
+    font-size: 18px;
+    margin-left: 5%;
+}
+
+/*subscribe*/
+section.patners>h3 {
+    color: white;
+    font-size: 18px;
+    margin-left: 5%;
+}
+
+input.button{
+    background-color: rgb(34, 34, 206);
+    border: 1px solid rgb(172, 148, 45);
+    padding: 5px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: rgb(139, 139, 219);
+    margin-bottom: 50px;
+}
+
+input.emailhere{
+    background-color: rgb(25, 46, 138);
+    border: 1px solid rgb(87, 83, 145);
+    padding: 5px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: rgb(36, 36, 124);
+    margin-left: 5%;
+}
+
+/*copyright*/
+span{
+    color: white;
+    font-size: 10px;
+    margin-left: 5%;
+}
+
+img.fb {
+    height: 15px;
+    float: right;
+    margin-right: 5%;
+    padding: 5px;
+}
+
+img.insta {
+    height: 15px;
+    float: right;
+    padding: 5px;
+}
+
+img.linkedin {
+    height: 15px;
+    float: right;
+    padding: 5px;
+}
+
+/*desktop version*/
+@media only screen and (min-width: 601px) {
+
+    h4 {
+        margin: 20px 0 0 0;
+        text-align: left;
+        display: inline;
+    }
+
+    section.partners>h3{
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    section.partners{
+        width: 70%;
+        padding: 0;
+        min-height: 250px;
+    }
+
+    div.flex-container img {
+        padding: 0;
+    }
+
+    .flex-container3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .flex-container2 {
+
+        display: flex;
+        justify-content: left;
+        margin: 0 auto 0 0;
+        width: 0%;
+    }
+
+    input.emailhere{
+        height: 25px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    input.button {
+        height: 37px;
+        margin-top: 15px;
+    }
+
+    span {margin: 0;}
+    p {margin: 0;}
+
+    .copyright {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    img.fb{
+        margin-right: 0px;
+    }
+
+    footer {
+        height: 200px;
+    }
+
+    a.about {
+        padding-left: 0px;
+    }
+
+    li a{
+        padding-top: 15px;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+}
