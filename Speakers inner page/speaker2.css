@@ -4,7 +4,7 @@
 }
 
 body{
-  background-color: black;
+  background-color: #090C30;
 }
 
 .wrapper{
@@ -21,6 +21,14 @@ body{
   margin-left: 20px;
 }
 
+.aboutspeakers p{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  margin: 10px auto 20px 0;
+  line-height: 1.2;
+}
 
 .grid{
   display: grid;
@@ -37,15 +45,6 @@ body{
   background-size: cover;
   background-position: center;
 }
-/*
-.content p{
-
-  margin-bottom: 10px;
-}
-
-.content{
-
-}*/
 
 .content{
   display: flex;
@@ -125,12 +124,9 @@ body{
   }
 
   .aboutspeakers p{
-    font-family: 'Source Sans Pro', sans-serif;
-  	color: #ffffff;
     text-align: left;
     font-size: 16px;
     margin: 20px auto 20px 0;
-    line-height: 1.2;
   }
 
   .grid{
