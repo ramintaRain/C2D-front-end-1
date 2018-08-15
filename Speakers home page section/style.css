@@ -94,7 +94,7 @@ font-family: 'Source Sans Pro', sans-serif;
 /*BlOG section @media*/
 @media only screen and (min-width: 768px){
 
-  .wrapper3{
+  .wrapper3{/*istrint kai bus bendram homepage*/
     width:70%;
     margin:0 auto;
   }
@@ -131,10 +131,6 @@ font-family: 'Source Sans Pro', sans-serif;
     height: 400px;
   }
 
-  #blog-1 p {
-    padding:15px;
-  }
-
   #blog-1 h3{
     padding: 260px 15px 0;
   }
@@ -146,10 +142,6 @@ font-family: 'Source Sans Pro', sans-serif;
   #blog-2{
     height: 195px;
     margin-bottom:0;
-  }
-
-  #blog-2 p {
-      padding:15px;
   }
 
   #blog-2 h3{
@@ -164,10 +156,6 @@ font-family: 'Source Sans Pro', sans-serif;
     height: 195px;
   }
 
-  #blog-3 p {
-    padding:15px;
-  }
-
   #blog-3 h3{
     padding-top: 60px;
   }
@@ -177,10 +165,14 @@ font-family: 'Source Sans Pro', sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height:100%;
+    min-height:91%;
   }
 
-   .blog-section div{
+  #blog-1 .blog-box1{
+    min-height:96%;
+  }
+
+  .blog-section div{
      cursor: pointer;
      -webkit-transition: 0.3s ease-in-out,
      -webkit-transform 0.3s ease-in-out;
@@ -196,7 +188,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
   .readmore a{
     text-decoration: none;
-    font-size: 14pt;
+    font-size: 16px;
   }
 
   .readmore a:visited {
