@@ -1,8 +1,12 @@
+
+
 /*about section for mobile*/
 
 
 body{
   background-color: #090C30;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
 }
 
 section{
@@ -18,7 +22,7 @@ h1{
   font-size: 30px;
   margin: 0 auto;
   text-align: center;
-  margin-top:30px;
+  margin-top:110px;
 }
 
 h2{
@@ -123,8 +127,243 @@ iframe{
   max-width: 100%;
 }
 
-/*FOOTER and partners*/
 
+
+
+
+/* CSS for desktop starts here*/
+
+@media only screen and (min-width: 601px){
+
+
+
+h1{
+  font-size: 50px;
+  width:70%;
+  font-weight: 900;
+}
+
+h2{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/*STORY*/
+
+.story{
+  width:70%;
+}
+
+.story p{
+  font-size: 16px;
+}
+
+/*FAQ*/
+
+
+.faq{
+  width:70%;
+}
+
+.accordion {
+  padding:20px;
+  font-size: 20px;
+}
+
+.panel{
+  font-size: 16px;
+  padding:20px;
+}
+
+/*Gallery*/
+
+.gallery{
+  width:70%;
+}
+
+  .picture-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.picture-grid img{
+    height:300px;
+
+}
+
+iframe{
+  width:50%;
+}
+
+/*NAV starts here*/
+
+}
+* {
+box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+/*desktop version*/
+header {
+  height: 100px;
+  background-color: black;
+  margin: 0 auto;
+  margin-bottom: 0;
+  position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+.inner {
+  width: 70%;
+  margin: 0 15%;
+  padding: 10px 0;
+  height: 100%;
+}
+
+img{
+  margin-left: 0;
+  height: 70px;
+}
+.nav{
+  text-align: right;
+  margin-right: 0;
+}
+.menu a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  clear: both;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px 0 0;
+  line-height: 80px;
+  width: 100%;
+  height: 80px;
+}
+.menu a:nth-child(5) {
+  margin-right: 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu a:hover {
+  color: #44EEEB;
+}
+label {
+  margin: 0;
+  font-size: 40px;
+  line-height: 50px;
+  float: right;
+  display: none;
+  color: white;
+}
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    height: 70px;
+  }
+  .inner {
+    padding: 0 5%;
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu > a {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    margin: 0;
+    background-color: black;
+    transition: 0.3s;
+    opacity: 1;
+  }
+  a:hover {
+    opacity: 1;
+    background-color: #090C30;
+  }
+
+  #toggle:checked+.menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  header img {
+    height: 30px;
+    width: auto;
+    float: left;
+}
+.picture-grid img{
+  width:100%;
+  height:300px;
+}
+
+.picture-grid img:hover{
+  transform: scale(1.5);
+}
+}
+
+
+
+/* FOOOTER/*
+
+
+
+/*contacts*/
+
+  @media screen and (max-width: 600px) {
+    section.contacts>p{
+        padding-left: 5%;
+    }
+}
+
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color: grey;
+  }
+
+/*partneriai*/
 section.partners>h2{
     font-size: 30px;
     padding: 20px;
@@ -275,147 +514,87 @@ img.linkedin {
     padding: 5px;
 }
 
+/*desktop version*/
+@media only screen and (min-width: 601px) {
 
-/* CSS for desktop starts here*/
+  h4 {
+      margin: 20px 0 0 0;
+      text-align: left;
+      display: inline;
+  }
 
-@media only screen and (min-width: 601px){
+    section.partners>h2{
+        text-align: left;
+        padding: 10px 0;
+    }
 
-h1{
-  font-size: 50px;
-  width:70%;
-  font-weight: 900;
-}
+    section.partners{
+        width: 70%;
+        padding: 0;
+        min-height: 250px;
+    }
 
-h2{
-  font-size: 40px;
-  font-weight: 600;
-}
+    div.flex-container img {
+        padding: 0;
+    }
 
-/*STORY*/
+    .flex-container3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 70%;
+        margin: 0 auto;
+    }
 
-.story{
-  width:70%;
-}
+    .flex-container2 {
 
-.story p{
-  font-size: 16px;
-}
+        display: flex;
+        justify-content: left;
+        margin: 0 auto 0 0;
+        width: 0%;
+        font-size: 16px;
+    }
 
-/*FAQ*/
+    input.emailhere{
+        height: 25px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
 
+    input.button {
+        height: 25px;
+        margin-top: 15px;
 
-.faq{
-  width:70%;
-}
+    }
 
-.accordion {
-  padding:20px;
-  font-size: 20px;
-}
+    span {margin: 0;}
+    p {margin: 0;}
 
-.panel{
-  font-size: 16px;
-  padding:20px;
-}
+    .copyright {
+        width: 70%;
+        margin: 0 auto;
+    }
 
-/*Gallery*/
+    img.fb{
+        margin-right: 0px;
+    }
 
-.gallery{
-  width:70%;
-}
+    footer {
+        height: 200px;
+    }
 
-  .picture-grid{
-    grid-template-columns: 1fr 1fr 1fr;
-}
+    a.about {
+        padding-left: 0px;
+    }
 
-.picture-grid img{
-    height:300px;
+    li a{
+        padding-top: 15px;
+    }
 
-}
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
 
-iframe{
-  width:50%;
-}
-
-/*FOOTER and partners*/
-
-h4 {
-    margin: 20px 0 0 0;
-    text-align: left;
-    display: inline;
-}
-
-section.partners>h2{
-    text-align: left;
-    padding: 10px 0;
-}
-
-section.partners{
-    width: 70%;
-    padding: 0;
-    min-height: 250px;
-}
-
-div.flex-container img {
-    padding: 0;
-}
-
-.flex-container3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.flex-container2 {
-
-    display: flex;
-    justify-content: left;
-    margin: 0 auto 0 0;
-    width: 0%;
-    font-size: 16px;
-}
-
-input.emailhere{
-    height: 25px;
-    margin-top: 15px;
-    margin-left: 15px;
-}
-
-input.button {
-    height: 25px;
-    margin-top: 15px;
-
-}
-
-span {margin: 0;}
-p {margin: 0;}
-
-.copyright {
-    width: 70%;
-    margin: 0 auto;
-}
-
-img.fb{
-    margin-right: 0px;
-}
-
-footer {
-    height: 200px;
-}
-
-a.about {
-    padding-left: 0px;
-}
-
-li a{
-    padding-top: 15px;
-}
-
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
 }
