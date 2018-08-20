@@ -1,3 +1,132 @@
+/*nav Vestos*/
+
+* {
+    box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+
+    /*desktop version*/
+    header {
+      height: 100px;
+      background-color: black;
+      margin: 0 auto;
+      margin-bottom: 0;
+      position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .inner {
+      width: 70%;
+      margin: 0 15%;
+      padding: 10px 0;
+      height: 100%;
+    }
+    
+    img.logonav{
+      margin-left: 0;
+      height: 70px;
+    }
+    .nav{
+      text-align: right;
+      margin-right: 0;
+    }
+    .menu a {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      clear: both;
+      text-decoration: none;
+      color: white;
+      margin: 0 10px 0 0;
+      line-height: 80px;
+      width: 100%;
+      height: 80px;
+    }
+    .menu a:nth-child(5) {
+      margin-right: 0;
+    }
+    .containerA {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu a:hover {
+      color: #44EEEB;
+    }
+    label {
+      margin: 0;
+      font-size: 40px;
+      line-height: 50px;
+      float: right;
+      display: none;
+      color: white;
+    }
+    #toggle {
+      display: none;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      header {
+        height: 70px;
+      }
+      .inner {
+        padding: 0 5%;
+        width: 90%;
+        margin: 0;
+        
+      }
+    
+      label {
+        display: block;
+        cursor: pointer;
+      }
+      .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+      }
+      .menu > a {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        font-size: 20px;
+        border-bottom: 1px solid black;
+        margin: 0;
+        background-color: black;
+        transition: 0.3s;
+        opacity: 1;
+      }
+      a:hover {
+        opacity: 1;
+        background-color: #090C30;
+      }
+    
+      #toggle:checked+.menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+      }
+      .containerA {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+      }
+      img.logonav {
+        height: 50px;
+        width: auto;
+        float: left;
+    }
+} 
+/*mano*/
+
 .background{
     background: #090C30;
     font-family: Source sans pro;
@@ -12,6 +141,7 @@ h1{
     font-size: 40px;
     padding-top: 50px;
     padding-left: 15%;
+    margin-top: 0;
 }
 section.contacts>p{
     font-size: 20px;
@@ -21,6 +151,7 @@ section.contacts>p{
 @media screen and (max-width: 600px) {
     h1{
         padding-left: 5%;
+        margin-top: 69px;
     }
     section.contacts>p{
         padding-left: 5%;
@@ -227,7 +358,10 @@ img.linkedin {
 
 /*desktop version*/
 @media only screen and (min-width: 601px) {
-    
+   section.contacts{
+       margin-top: 99px;
+   }  
+   
     h4 {
         margin: 20px 0 0 0;
         text-align: left; 
@@ -242,7 +376,7 @@ img.linkedin {
     section.partners{   
         width: 70%;
         padding: 0;
-        min-height: 250px;
+        min-height: 170px;
     }
 
     div.flex-container img {
@@ -308,3 +442,4 @@ img.linkedin {
         padding: 5px;
     }
 }
+
