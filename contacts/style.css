@@ -40,6 +40,7 @@
     .menu a {
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 16px;
+      font-weight: bold;
       clear: both;
       text-decoration: none;
       color: white;
