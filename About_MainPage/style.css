@@ -5,12 +5,13 @@ body{
 }
 
 h2{
+  margin: 30px auto;
   width:90%;
-  margin:0 auto;
   color:white;
   text-align:center;
   font-size: 26px;
   font-weight: 900;
+  padding: inherit;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -102,7 +103,17 @@ h2{
 
 
 .read a{
-  color:white;
+  color:#44EEEB;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.read a:visited {
+  color: cyan;
+}
+
+.read a:hover {
+  color: lightgreen;
 }
 
 /* CSS for desktop starts here*/
@@ -110,10 +121,15 @@ h2{
 
 @media only screen and (min-width: 601px){
 h2{
+  margin:0 auto;
   text-align:left;
   width:70%;
-  font-weight:black;
+  font-weight:900;
   font-size:40px;
+}
+
+.titleabout{
+  margin:30px 0;
 }
 
 .about{
