@@ -1,8 +1,12 @@
+
+
 /*about section for mobile*/
 
 
 body{
   background-color: #090C30;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
 }
 
 section{
@@ -18,19 +22,43 @@ h1{
   font-size: 30px;
   margin: 0 auto;
   text-align: center;
-  margin-top:30px;
+  margin-top:110px;
 }
 
-h2{
+.story h2{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight:600;
   color:white;
   width:90%;
   font-size: 26px;
   margin: 0 auto;
-  margin-bottom:15px;
+  margin-bottom:30px;
   text-align: center;
-  margin-top:15px;
+  margin-top:30px;
+}
+
+.gallery h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:600;
+  color:white;
+  width:90%;
+  font-size: 26px;
+  margin: 0 auto;
+  margin-bottom:30px;
+  text-align: center;
+  margin-top:30px;
+}
+
+.faq h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:600;
+  color:white;
+  width:90%;
+  font-size: 26px;
+  margin: 0 auto;
+  margin-bottom:30px;
+  text-align: center;
+  margin-top:30px;
 }
 
 /*STORY*/
@@ -123,29 +151,217 @@ iframe{
   max-width: 100%;
 }
 
-/*FOOTER and partners*/
+*/*nav Vestos*/
 
-.background{
-    background-color:black;
+* {
+    box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+
+    /*desktop version*/
+    header {
+      height: 100px;
+      background-color: black;
+      margin: 0 auto;
+      margin-bottom: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+    .inner {
+      width: 70%;
+      margin: 0 auto;
+      padding: 10px 0;
+      height: 100%;
+    }
+
+    img.logonav{
+      margin-left: 0;
+      height: 50px;
+    }
+    .nav{
+      text-align: right;
+      margin-right: 0;
+    }
+    .menu > a {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      clear: both;
+      text-decoration: none;
+      color: white;
+      margin: 0 10px 0 0;
+      line-height: 80px;
+      width: 100%;
+      height: 80px;
+      font-weight: 700;
+    }
+    .menu > a:nth-child(5) {
+      margin-right: 0;
+    }
+    .containerA {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu a:hover {
+      color: #44EEEB;
+    }
+    label {
+      margin: 0;
+      font-size: 40px;
+      line-height: 50px;
+      float: right;
+      display: none;
+      color: white;
+    }
+    #toggle {
+      display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+      header {
+        height: 70px;
+      }
+      .inner {
+        width: 90%;
+        margin:0 5%;
+      }
+
+      label {
+        display: block;
+        cursor: pointer;
+      }
+      .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+      }
+      .menu > a {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        font-size: 20px;
+        border-bottom: 1px solid black;
+        margin: 0;
+        background-color: black;
+        transition: 0.3s;
+        opacity: 1;
+      }
+      a:hover {
+        opacity: 1;
+        background-color: #090C30;
+      }
+
+      #toggle:checked+.menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+      }
+      .containerA {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+      }
+      img.logonav {
+        height: 30px;
+        width: auto;
+        float: left;
+    }
+
 }
 
+/*partners+footer Justes pradzia*/
+
+.background{
+    background: #090C30;
+    font-family: Source sans pro;
+}
+
+/*contacts*/
+
+
+
+
+
+
+
+section.contacts {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .row, .column {
+      padding-right: 15%;
+padding-left: 15%;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+    .row, .column {
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color: grey;
+  }
+}
 
 /*partneriai*/
-section.partners>h3{
+section.partners>h2{
+  margin-top: 0;
     font-size: 30px;
     padding: 20px;
     text-align: center;
     color: white;
 }
-
+/*margin keista*/
 section.partners{
-    background-color: black;
+    background-color: #090C30;
     min-height: 250px;
-    margin: 0 auto 70px auto;
+    margin: 0 auto;
     width: 95%;
 }
 div.flex-container img{
     padding: 10px;
+
 }
 
 .apple{
@@ -158,6 +374,7 @@ div.flex-container img{
 
 .nike{
     height: 40px;
+    margin-top: 10px;
 }
 
 .cognizant{
@@ -170,6 +387,7 @@ div.flex-container img{
 
 .cola{
     height: 35px;
+    margin-top: 10px;
 }
 
 .vu{
@@ -185,13 +403,15 @@ div.flex-container img{
 
 /*footer*/
 footer{
-    background-color: rgb(12, 18, 73);
+    background-color:rgb(8, 11, 39);
     height: 350px;
     margin: 0 auto;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .flex-container2 {
-    background-color: rgb(12, 18, 73);
+    background-color: rgb(8, 11, 39);
     padding: 20px 0 0 0;
     margin: 0 auto 50px auto;
     width: 95%;
@@ -217,30 +437,30 @@ li a {
 
 h4{
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 5%;
 }
 
 /*subscribe*/
-section.patners>h3 {
+section.patners>h2 {
     color: white;
     font-size: 18px;
     margin-left: 5%;
 }
 
 input.button{
-    background-color: rgb(34, 34, 206);
-    border: 1px solid rgb(172, 148, 45);
+    background-color: rgb(11, 16, 70);
+    border: 1px solid #44EEEB;
     padding: 5px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    color: rgb(139, 139, 219);
+    color: #44EEEB;
     margin-bottom: 50px;
 }
 
 input.emailhere{
-    background-color: rgb(25, 46, 138);
     border: 1px solid rgb(87, 83, 145);
+    background-color: #090C30;
     padding: 5px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -249,7 +469,6 @@ input.emailhere{
 }
 
 /*copyright*/
-
 span{
     color: white;
     font-size: 10px;
@@ -275,10 +494,97 @@ img.linkedin {
     padding: 5px;
 }
 
+/*desktop version*/
+@media only screen and (min-width: 601px) {
+
+    h4 {
+        margin: 20px 0 0 0;
+        text-align: left;
+        display: inline;
+    }
+
+    section.partners>h2{
+        text-align: left;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    section.partners{
+        width: 70%;
+        padding: 0;
+        min-height: 170px;
+    }
+
+    div.flex-container img {
+        padding: 0;
+    }
+
+    .flex-container3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .flex-container2 {
+
+        display: flex;
+        justify-content: left;
+        margin: 0 auto 0 0;
+        width: 0%;
+        font-size: 16px;
+    }
+
+    input.emailhere{
+        height: 25px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    input.button {
+        height: 25px;
+        margin-top: 15px;
+
+    }
+
+    span {margin: 0;}
+    p {margin: 0;}
+
+    .copyright {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    img.fb{
+        margin-right: 0px;
+    }
+
+    footer {
+        height: 200px;
+    }
+
+    a.about {
+        padding-left: 0px;
+    }
+
+    li a{
+        padding-top: 15px;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+}
+/*Partners+footer Justes pabaiga*/
 
 /* CSS for desktop starts here*/
 
 @media only screen and (min-width: 601px){
+
+
 
 h1{
   font-size: 50px;
@@ -286,7 +592,17 @@ h1{
   font-weight: 900;
 }
 
-h2{
+.faq h2{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.gallery h2{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.story h2{
   font-size: 40px;
   font-weight: 600;
 }
@@ -324,96 +640,14 @@ h2{
   width:70%;
 }
 
-  .picture-grid{
+.picture-grid{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.picture-grid img{
+.picture-grid img {
     height:300px;
-
 }
 
 iframe{
   width:50%;
-}
-
-/*FOOTER and partners*/
-
-h4 {
-    margin: 20px 0 0 0;
-    text-align: left;
-    display: inline;
-}
-
-section.partners>h3{
-    text-align: left;
-    padding: 10px 0;
-}
-
-section.partners{
-    width: 70%;
-    padding: 0;
-    min-height: 250px;
-}
-
-div.flex-container img {
-    padding: 0;
-}
-
-.flex-container3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.flex-container2 {
-
-    display: flex;
-    justify-content: left;
-    margin: 0 auto 0 0;
-    width: 0%;
-}
-
-input.emailhere{
-    height: 25px;
-    margin-top: 15px;
-    margin-left: 15px;
-}
-
-input.button {
-    height: 37px;
-    margin-top: 15px;
-}
-
-span {margin: 0;}
-p {margin: 0;}
-
-.copyright {
-    width: 70%;
-    margin: 0 auto;
-}
-
-img.fb{
-    margin-right: 0px;
-}
-
-footer {
-    height: 200px;
-}
-
-a.about {
-    padding-left: 0px;
-}
-
-li a{
-    padding-top: 15px;
-}
-
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
 }
