@@ -136,12 +136,6 @@
 
 /*contacts*/
 
-
-
-
-
-
-
 section.contacts {
     box-sizing: border-box;
   }
@@ -206,6 +200,7 @@ section.partners{
     min-height: 250px;
     margin: 0 auto;
     width: 95%;
+    margin-top: 100px; /*margin-top???*/
 }
 div.flex-container img{
     padding: 10px;
