@@ -78,20 +78,20 @@
           font-family: 'Source Sans Pro', sans-serif;
           text-align: center;
           padding: 15px;
+          margin-top: 100px;
     }
     .tickets {
+      display: block;
       box-sizing: border-box;
-      min-height: 85vh;
       position: relative;
-      padding-top: 110px;
+      height: 100vh;
+      padding-top: 100px;
       background-color: #090C30;
-      padding-bottom: -350px;
     }
     p {
       text-align: center;
       font-size: 40px;
       font-family: 'Source Sans Pro', sans-serif;
-
       color: white;
       margin-top: 100px;
     }
@@ -101,9 +101,8 @@
         height: 70px;
       }
       .inner {
-        padding: 0 5%;
         width: 90%;
-        margin: 0;
+        margin:0 5%;
       }
 
       label {
@@ -150,32 +149,121 @@
     }
 
 }
-/*mano*/
+
+/*partners+footer Justes pradzia*/
 
 .background{
     background: #090C30;
     font-family: Source sans pro;
 }
 
+/*contacts*/
 
-@media screen and (max-width: 600px) {
 
-    section.contacts>p{
-        padding-left: 5%;
-    }
-    section.contacts>h2{
-        padding-left: 5%;
-    }
-}
+
+
+
+
 
 section.contacts {
     box-sizing: border-box;
   }
 
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .row, .column {
+      padding-right: 15%;
+padding-left: 15%;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+    .row, .column {
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
   .title {
     color: grey;
   }
+}
 
+/*partneriai*/
+section.partners>h2{
+  margin-top: 0;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+/*margin keista*/
+section.partners{
+    background-color: #090C30;
+    min-height: 250px;
+    margin: 0 auto;
+    width: 95%;
+}
+div.flex-container img{
+    padding: 10px;
+
+}
+
+.apple{
+    height: 50px;
+}
+
+.beats{
+    height: 50px;
+}
+
+.nike{
+    height: 40px;
+    margin-top: 10px;
+}
+
+.cognizant{
+    height: 50px;
+}
+
+.microsoft{
+    height: 50px;
+}
+
+.cola{
+    height: 35px;
+    margin-top: 10px;
+}
+
+.vu{
+    height: 50px;
+}
 
 .flex-container{
     display: flex;
@@ -183,12 +271,6 @@ section.contacts {
     justify-content: space-between;
     margin: 0 auto;
 }
-
-.container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 
 /*footer*/
 footer{
@@ -214,9 +296,11 @@ footer{
     justify-content: space-between;
 }
 
+li {
+    display: inline;
+}
 
-
-ul > li a {
+li a {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -283,9 +367,6 @@ img.linkedin {
 
 /*desktop version*/
 @media only screen and (min-width: 601px) {
-   section.contacts{
-       margin-top: 99px;
-   }
 
     h4 {
         margin: 20px 0 0 0;
@@ -295,7 +376,8 @@ img.linkedin {
 
     section.partners>h2{
         text-align: left;
-        padding: 10px 0;
+        padding: 0;
+        margin-top: 0;
     }
 
     section.partners{
@@ -338,7 +420,7 @@ img.linkedin {
     }
 
     span {margin: 0;}
-
+    p {margin: 0;}
 
     .copyright {
         width: 70%;
@@ -357,7 +439,14 @@ img.linkedin {
         padding-left: 0px;
     }
 
-    ul > li a{
+    li a{
         padding-top: 15px;
     }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
 }
+/*Partners+footer Justes pabaiga*/
