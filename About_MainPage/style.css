@@ -1,10 +1,23 @@
+/*ABOUT part starts here*/
 /*CSS for mobile phone*/
 
 body{
   background-color: #090C30;
 }
 
-h2{
+.titleabout h2{
+  margin: 30px auto;
+  width:90%;
+  color:white;
+  text-align:center;
+  font-size: 26px;
+  font-weight: 900;
+  padding: inherit;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.about-text h2{
   margin: 30px auto;
   width:90%;
   color:white;
@@ -19,6 +32,7 @@ h2{
 .about{
   color:white;
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
   width:90%;
   margin:0 auto;
   display: flex;
@@ -116,14 +130,23 @@ h2{
   color: lightgreen;
 }
 
+/*ABOUT part starts here*/
 /* CSS for desktop starts here*/
 
-
 @media only screen and (min-width: 601px){
-h2{
+
+.titleabout h2{
   margin:0 auto;
   text-align:left;
   width:70%;
+  font-weight:900;
+  font-size:40px;
+}
+
+.about-text h2{
+  margin:0 auto;
+  text-align:center;
+  width:100%;
   font-weight:900;
   font-size:40px;
 }
@@ -195,3 +218,4 @@ font-size: 14px;
 }
 
 }
+/*ABOUT part ENDS here*/
