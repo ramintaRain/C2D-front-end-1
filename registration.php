@@ -86,14 +86,14 @@ if(strlen($success) == 0) {
 	<header>
 				<div class="inner containerA">
 					<div class="navimage">
-						<a href="index.html"><img class="logonav" src="https://steamcdn-a.akamaihd.net/steam/apps/798950/header.jpg?t=1525233749" alt="logout"/></a>
+						<a href="index.html"><img class="logonav" src="images/logologout.jpg" alt="logout"/></a>
 					</div>
 					<div class="nav">
 						<label for="toggle">&#9776;</label>
 						<input type="checkbox" id="toggle"/>
 						<div class="menu">
 						  <a href="AboutFaqGallery.html">About</a>
-						  <a href="#">News</a>
+						  <a href="blog.html">News</a>
 						  <a href="event.html">Program</a>
 						  <a href="speaker2.html">Speakers</a>
 						  <a href="tickets.html">Tickets</a>
@@ -150,7 +150,7 @@ if(strlen($success) == 0) {
 					<li><a class="about" href="AboutFaqGallery.html">About</a></li>
 					<li><a href="tickets.html">Tickets</a></li>
 					<li><a href="event.html">Program</a></li>
-					<li><a href="#blog">Blog</a></li>
+					<li><a href="blog.html">Blog</a></li>
 				</ul>
 				</div>
 
