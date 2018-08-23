@@ -93,7 +93,7 @@ if(strlen($success) == 0) {
 						<input type="checkbox" id="toggle"/>
 						<div class="menu">
 						  <a href="AboutFaqGallery.html">About</a>
-						  <a href="#">News</a>
+						  <a href="bloginner.html">News</a>
 						  <a href="event.html">Program</a>
 						  <a href="speaker2.html">Speakers</a>
 						  <a href="tickets.html">Tickets</a>
@@ -150,7 +150,7 @@ if(strlen($success) == 0) {
 					<li><a class="about" href="AboutFaqGallery.html">About</a></li>
 					<li><a href="tickets.html">Tickets</a></li>
 					<li><a href="event.html">Program</a></li>
-					<li><a href="#blog">Blog</a></li>
+					<li><a href="bloginner.html">Blog</a></li>
 				</ul>
 				</div>
 
