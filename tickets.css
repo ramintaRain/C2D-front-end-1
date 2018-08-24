@@ -32,7 +32,7 @@
 
     img.logonav{
       margin-left: 0;
-      height: 50px;
+      height: 80px;
     }
     .nav{
       text-align: right;
@@ -97,7 +97,7 @@
       margin-top: 100px;
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
       header {
         height: 70px;
       }
@@ -144,7 +144,7 @@
         flex-direction: row;
       }
       img.logonav {
-        height: 30px;
+        height: 60px;
         width: auto;
         float: left;
     }
