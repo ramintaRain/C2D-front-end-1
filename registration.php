@@ -86,7 +86,7 @@ if(strlen($success) == 0) {
 	<header>
 				<div class="inner containerA">
 					<div class="navimage">
-						<a href="index.html"><img class="logonav" src="images/logologout.jpg" alt="logout"/></a>
+						<a href="index.html"><img class="logonav" src="images/logout.jpg" alt="logout"/></a>
 					</div>
 					<div class="nav">
 						<label for="toggle">&#9776;</label>
@@ -97,6 +97,7 @@ if(strlen($success) == 0) {
 						  <a href="event.html">Program</a>
 						  <a href="speaker2.html">Speakers</a>
 						  <a href="tickets.html">Tickets</a>
+              <a href="contacts_inside.html">Contacts</a>
 						</div>
 					</div>
 				</div>
